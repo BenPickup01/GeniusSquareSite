@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    background-color: #155674;
+    color: white;
+    font-weight: 900;
+}
+
+#grid-holder {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #60BEB3; /* Change this to your desired background color */
+    padding: 20px; /* Optional: adds some space around the grids */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+#button-container {
+    height: 100px;
+    display: flex;
+    justify-content: center; /* This centers the items horizontally */
+    align-items: center;  
+    gap: 50px;
+    padding: 5px;
+}
+
+.pageButton {
+    width: 100px;
+    height: 60px;
+    background-color: #79F8BB;
+    box-shadow: none;
+    border: 2px solid #F5FFAE;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+}
+
+.grid-cell {
+    position: relative; /* Essential for centering the circle */
+    border: 1px solid darkgray;
+    background-color: #f0f0f0;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* This is how we perfectly center the circle */
+    width: 80%; /* The circle will take up 80% of the cell's width */
+    height: 80%;
+    background-color: rgb(210, 180, 140);
+    border-radius: 50%; /* This is what makes it a circle */
+}
+
