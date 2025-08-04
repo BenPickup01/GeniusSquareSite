@@ -91,4 +91,4 @@ def solve_board():
         return jsonify({"error": str(e), "grid_state_on_error": env.visual_grid.tolist()}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
